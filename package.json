@@ -1,0 +1,9 @@
+{
+  "name": "openclaw-app",
+  "scripts": {
+    "start": "npx openclaw onboard"
+  },
+  "dependencies": {
+    "openclaw": "latest"
+  }
+}
