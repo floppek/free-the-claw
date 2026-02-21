@@ -7,7 +7,7 @@
     "openclaw": "latest"
   },
   "scripts": {
-    "postinstall": "npm cache clean --force",
+    "heroku-postbuild": "find node_modules -type f -name '*.map' -delete && find node_modules -type f -name '*.md' -delete && rm -rf .npm",
     "start": "openclaw onboard"
   }
 }
