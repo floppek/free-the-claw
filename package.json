@@ -7,6 +7,8 @@
     "openclaw": "latest"
   },
   "scripts": {
+    "postinstall": "npm cache clean --force && rm -rf /tmp/*",
     "start": "openclaw onboard"
   }
 }
+
