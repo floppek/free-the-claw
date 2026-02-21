@@ -1,5 +1,8 @@
 {
   "name": "openclaw-app",
+  "engines": {
+    "node": "22.x"
+  },
   "scripts": {
     "start": "npx -y openclaw onboard"
   }
