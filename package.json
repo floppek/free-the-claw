@@ -1,13 +1,10 @@
 {
   "name": "openclaw-app",
   "engines": {
-    "node": "22.13.x"
-  },
-  "dependencies": {
-    "openclaw": "latest"
+    "node": "22.x"
   },
   "scripts": {
-    "heroku-postbuild": "rm -rf node_modules/.cache .npm",
-    "start": "openclaw onboard"
+    "heroku-postbuild": "PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true PUPPETEER_SKIP_DOWNLOAD=true PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD=1 npm install openclaw && rm -rf node_modules/.cache",
+    "start": "npx openclaw onboard"
   }
 }
