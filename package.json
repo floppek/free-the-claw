@@ -7,7 +7,8 @@
     "openclaw": "latest"
   },
   "scripts": {
-    "heroku-postbuild": "find node_modules -type f -name '*.map' -delete && find node_modules -type f -name '*.md' -delete && rm -rf .npm",
+    "heroku-postbuild": "find node_modules -type f -name '*.map' -delete; find node_modules -type f -name '*.ts' -delete; find node_modules -type d -name 'test' -exec rm -rf {} +; rm -rf .npm",
     "start": "openclaw onboard"
   }
 }
+
