@@ -7,7 +7,7 @@
     "openclaw": "latest"
   },
   "scripts": {
-    "heroku-postbuild": "find node_modules -type f -name '*.map' -delete; find node_modules -type f -name '*.ts' -delete; find node_modules -type f -name '*.md' -delete; find node_modules -type f -name '*.txt' -delete; find node_modules -type f -name 'LICENSE*' -delete; find node_modules -type f -name '*.d.ts' -delete; find node_modules -type f -name '*.yml' -delete; find node_modules -type f -name '*.yaml' -delete; find node_modules -type f -name '*.html' -delete; find node_modules -type f -name '*.png' -delete; find node_modules -type d -name 'test' -exec rm -rf {} +; find node_modules -type d -name 'docs' -exec rm -rf {} +; find node_modules -type d -name 'examples' -exec rm -rf {} +; find node_modules -type d -name 'locales' -exec rm -rf {} +; rm -rf node_modules/.cache; rm -rf .npm",
+    "heroku-postbuild": "find node_modules -type f -name '*.map' -delete; find node_modules -type f -name '*.ts' -delete; find node_modules -type f -name '*.md' -delete; find node_modules -type f -name '*.txt' -delete; find node_modules -type f -name '*.d.ts' -delete; find node_modules -type f -name '*.o' -delete; find node_modules -type f -name '*.a' -delete; find node_modules -type d -name 'test' -exec rm -rf {} +; find node_modules -type d -name 'tests' -exec rm -rf {} +; find node_modules -type d -name '__tests__' -exec rm -rf {} +; find node_modules -type d -name 'docs' -exec rm -rf {} +; find node_modules -type d -name 'examples' -exec rm -rf {} +; rm -rf node_modules/.cache; rm -rf .npm",
     "start": "openclaw onboard"
   }
 }
