@@ -3,7 +3,10 @@
   "engines": {
     "node": "22.x"
   },
+  "dependencies": {
+    "openclaw": "latest"
+  },
   "scripts": {
-    "start": "npx -y openclaw onboard"
+    "start": "openclaw onboard"
   }
 }
