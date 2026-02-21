@@ -7,7 +7,7 @@
     "openclaw": "latest"
   },
   "scripts": {
-    "heroku-postbuild": "npm prune --production && rm -rf node_modules/@types node_modules/.cache .npm && find node_modules -type f -name '*.map' -delete && find node_modules -type f -name '*.ts' -delete && find node_modules -type f -name '*.md' -delete",
+    "heroku-postbuild": "npx -y node-prune && rm -rf .npm node_modules/.cache",
     "start": "openclaw onboard"
   }
 }
