@@ -1,13 +1,13 @@
 {
   "name": "openclaw-app",
   "engines": {
-    "node": "22.x"
+    "node": "22.13.x"
   },
   "dependencies": {
     "openclaw": "latest"
   },
   "scripts": {
-    "heroku-postbuild": "npx -y node-prune && rm -rf .npm node_modules/.cache",
+    "heroku-postbuild": "rm -rf node_modules/.cache .npm",
     "start": "openclaw onboard"
   }
 }
